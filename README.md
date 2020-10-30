@@ -4,7 +4,9 @@ Clone of 2048 game in Swift
 A Funny Time Killing Game. Swipe to move the cubes, try to earn the largest-digit cube as you can.
 # IDE
 Xcode 12.1
+
 Swift 5.3
+
 Better experience with iPhone 8 or later devices. 
 
 ![InitialDashBoard](https://user-images.githubusercontent.com/63318597/97724999-05d90700-1aa4-11eb-814b-e74a25cbd6b5.png)
