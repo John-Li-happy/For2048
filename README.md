@@ -7,4 +7,4 @@ Xcode 12.1
 Swift 5.3
 Better experience with iPhone 8 or later devices. 
 
-2048Initial.png
+![InitialDashBoard](https://user-images.githubusercontent.com/63318597/97724999-05d90700-1aa4-11eb-814b-e74a25cbd6b5.png)
