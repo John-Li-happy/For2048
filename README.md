@@ -7,4 +7,4 @@ Xcode 12.1
 Swift 5.3
 Better experience with iPhone 8 or later devices. 
 
-![picture](/Users/johnli/Desktop/MaterialFor2048/2048Initial.png)
+![home](/Users/johnli/Desktop/MaterialFor2048/2048Initial.png)
