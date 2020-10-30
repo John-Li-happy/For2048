@@ -5,7 +5,7 @@ A Funny Time Killing Game. Swipe to move the tiles, try to earn the largest-digi
 # IDE
 Xcode 12.1
 
-Swift 5.3
+Swift 5.2
 
 Better experience with iPhone 8 or later devices. 
 
