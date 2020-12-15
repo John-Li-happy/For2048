@@ -115,6 +115,7 @@ class MainViewController: UIViewController, UICollectionViewDelegateFlowLayout {
             }
         }
     }
+    
     private func addRandomCube() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.02) {
             var counter = 0
