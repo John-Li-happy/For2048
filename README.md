@@ -2,6 +2,9 @@
 For2048 is an open source sandbox game inspired by 2048.
 # Discription
 A Funny Time Killing Game. Swipe to move the tiles, try to earn the largest-digit tile as you can. When connected two piles with same number, they will merge into one.
+
+[![featuredImage](https://user-images.githubusercontent.com/63318597/116277977-05b87c00-a754-11eb-80e3-99b0786eb528.png)](https://testflight.apple.com/join/fpW0I4Tq)
+
 # IDE
 Xcode 12.1
 
