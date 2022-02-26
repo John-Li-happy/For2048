@@ -18,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F2E2643B25E3EDEC0036EC60 /* For2048.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = For2048.entitlements; sourceTree = "<group>"; };
 		F2E662F72543819900357E59 /* VewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VewModel.swift; sourceTree = "<group>"; };
 		F2F614DB2543764400D451EF /* For2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = For2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F614DE2543764400D451EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +42,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F242FECC25E3EA7C007787C3 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F2F614DE2543764400D451EF /* AppDelegate.swift */,
+				F2F614E02543764400D451EF /* SceneDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		F242FECD25E3EA86007787C3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F2F614E42543764400D451EF /* Main.storyboard */,
+				F2F614E92543764500D451EF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		F2E662F62543818800357E59 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,14 +87,13 @@
 		F2F614DD2543764400D451EF /* For2048 */ = {
 			isa = PBXGroup;
 			children = (
+				F2E2643B25E3EDEC0036EC60 /* For2048.entitlements */,
+				F242FECD25E3EA86007787C3 /* Storyboards */,
+				F242FECC25E3EA7C007787C3 /* Support */,
 				F2E662F62543818800357E59 /* ViewModel */,
 				F2F614F72543782A00D451EF /* Controller */,
 				F2F614F62543782300D451EF /* View */,
-				F2F614DE2543764400D451EF /* AppDelegate.swift */,
-				F2F614E02543764400D451EF /* SceneDelegate.swift */,
-				F2F614E42543764400D451EF /* Main.storyboard */,
 				F2F614E72543764500D451EF /* Assets.xcassets */,
-				F2F614E92543764500D451EF /* LaunchScreen.storyboard */,
 				F2F614EC2543764500D451EF /* Info.plist */,
 			);
 			path = For2048;
@@ -318,6 +336,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = For2048/For2048.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GVZPRCFHJ;
 				INFOPLIST_FILE = For2048/Info.plist;
@@ -325,10 +344,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "John-Li.For2048";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -337,6 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = For2048/For2048.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GVZPRCFHJ;
 				INFOPLIST_FILE = For2048/Info.plist;
@@ -344,10 +365,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "John-Li.For2048";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

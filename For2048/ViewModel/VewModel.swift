@@ -61,7 +61,6 @@ class ViewModel {
     //MARK: - UP
     func upHandler(inputMatrix: [[Int]], aSimpleHnadler handler: @escaping ([[Int]]) -> Void) {
         var outputMatrix = inputMatrix
-//        let tem =  [[2, 0, 0, 0], [0, 0, 0, 0], [2, 0, 0, 0], [0, 0, 0, 0]]
         for eachColume in 0..<inputMatrix.count {
             var columeArray: [Int] = inputMatrix.map{ $0[eachColume] }
             var calculatedFlag = false
@@ -198,3 +197,4 @@ class ViewModel {
         return outputRow
     }
 }
+

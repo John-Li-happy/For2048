@@ -11,13 +11,17 @@ class MainViewController: UIViewController, UICollectionViewDelegateFlowLayout {
     let viewUsableWidth = UIScreen.main.bounds.width * 0.9
     var originalMatrix = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
     var matrix = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-    var flagMatrix = [[false, false, false, false], [false, false, false, false], [false, false, false, false], [false, false, false, false]] // ture means own-value
+    var flagMatrix = [
+                        [false, false, false, false],
+                        [false, false, false, false],
+                        [false, false, false, false],
+                        [false, false, false, false]
+                                                    ] // ture means own-value
     let viewModel = ViewModel()
     override var shouldAutorotate: Bool {
         return false
     }
     
-    @IBOutlet weak var detectedLabel: UILabel!
     @IBOutlet weak var mainCollectionView: UICollectionView! {
         didSet {
             mainCollectionView.delegate = self
@@ -73,7 +77,6 @@ class MainViewController: UIViewController, UICollectionViewDelegateFlowLayout {
     }
     
     @objc private func upSwipeHnadler() {
-        detectedLabel.text = "up detected"
         viewModel.upHandler(inputMatrix: matrix) { (newMatrix) in
             self.matrix = newMatrix
             self.addRandomCube()
@@ -84,7 +87,6 @@ class MainViewController: UIViewController, UICollectionViewDelegateFlowLayout {
     }
 
     @objc private func leftSwipeHandler() {
-        detectedLabel.text = "left detected"
         viewModel.leftHandler(inputMatrix: matrix) { newMatrix in
             self.matrix = newMatrix
             self.addRandomCube()
@@ -95,7 +97,6 @@ class MainViewController: UIViewController, UICollectionViewDelegateFlowLayout {
     }
 
     @objc private func rightSwipeHandler() {
-        detectedLabel.text = "right detected"
         viewModel.rightHandler(inputMatrix: matrix) { newMatrix in
             self.matrix = newMatrix
             self.addRandomCube()
@@ -106,7 +107,6 @@ class MainViewController: UIViewController, UICollectionViewDelegateFlowLayout {
     }
 
     @objc private func downSwipeHandler() {
-        detectedLabel.text = "down detected"
         viewModel.downHandler(inputMatrix: matrix) { newMatrix in
             self.matrix = newMatrix
             self.addRandomCube()
@@ -190,7 +190,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: viewUsableWidth / 4, height: viewUsableWidth / 4)
+        return CGSize(width: viewUsableWidth / 4 - 2, height: viewUsableWidth / 4 - 2)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

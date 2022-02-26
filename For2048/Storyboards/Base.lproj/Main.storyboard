@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -56,15 +57,6 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing deceted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J54-QM-MeC">
-                                <rect key="frame" x="0.0" y="508" width="414" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="VaX-By-IfO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oE0-Ry-Z98">
                                 <rect key="frame" x="294" y="52" width="110" height="34"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -93,17 +85,13 @@
                             <constraint firstItem="zDo-Oz-Hl2" firstAttribute="top" secondItem="oE0-Ry-Z98" secondAttribute="bottom" constant="8" id="AOh-Hq-a92"/>
                             <constraint firstItem="R1C-FQ-fdT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="En0-Wb-59S"/>
                             <constraint firstItem="zDo-Oz-Hl2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="M65-tf-cMZ"/>
-                            <constraint firstItem="J54-QM-MeC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="R90-pZ-Oc6"/>
                             <constraint firstItem="R1C-FQ-fdT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WbE-ub-w44"/>
                             <constraint firstItem="zDo-Oz-Hl2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="a7s-p0-dhA"/>
                             <constraint firstItem="oE0-Ry-Z98" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="imF-ob-hIk"/>
                             <constraint firstItem="oE0-Ry-Z98" firstAttribute="leading" secondItem="R1C-FQ-fdT" secondAttribute="trailing" constant="8" id="nwa-fF-mww"/>
-                            <constraint firstItem="J54-QM-MeC" firstAttribute="top" secondItem="zDo-Oz-Hl2" secondAttribute="bottom" id="toj-Gt-A5u"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J54-QM-MeC" secondAttribute="trailing" id="wzA-BY-gw4"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="detectedLabel" destination="J54-QM-MeC" id="Xn8-CG-aZu"/>
                         <outlet property="mainCollectionView" destination="zDo-Oz-Hl2" id="tTw-kC-oU9"/>
                     </connections>
                 </viewController>
